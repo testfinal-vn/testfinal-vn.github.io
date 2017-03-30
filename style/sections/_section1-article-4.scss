@@ -1,0 +1,215 @@
+article.four {
+  form.form-article-four {
+    background-color: #eaeaea;
+    padding: 30px 20px;
+
+    div.form-list input, div.form-list select {
+      display: inline-block;
+      width: calc(80% - (2px * 2));
+      height: 40px;
+      border: 4px solid #e0e0e0;
+      margin-bottom: 20px;
+    }
+    .active {
+      border: 4px solid #91111c !important;
+      color: #000;
+      text-decoration: none;
+      font: normal 1.6rem 'PT Serif';
+      line-height: 60px;
+    }
+    div.form-list select option {
+      width: 100%;
+    }
+    div.form-list select option:focus{background-color: #91111c;}
+    p.form-h6 {display: inline-block; width: 20%;}
+    p.marker {
+      display: inline-block;
+      width: 20%;
+    }
+    input.form-win.active {
+      padding:15px;
+    }
+
+
+    //----------------------------------------------RADIO---------------------------------------------------------------
+    div.marker-radio {display: block;}
+    div.block-radio {
+      display: block;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    div.block-radio label {
+      display: block;
+      margin-left: calc(20% + 24px);
+    }
+    div.block-radio label.label-one {display: inline-block; margin-left: 20px;}
+    .radio {
+      vertical-align: top;
+      width: 17px;
+      height: 17px;
+      margin: 0 3px 0 0;
+    }
+    .radio + label {
+      cursor: pointer;
+    }
+    .radio:not(checked) {
+      position: absolute;
+      opacity: 0;
+    }
+    .radio:not(checked) + label {
+      position: relative;
+      padding: 0 0 0 35px;
+    }
+    .radio:not(checked) + label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      border: 2px solid #000;
+      border-radius: 50%;
+      background: transparent;
+    }
+    .radio:not(checked) + label:after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      //background: #91111c;
+      box-shadow: inset 0 1px 1px #91111c;
+      opacity: 0;
+      transition: all .2s;
+    }
+    .radio:checked + label:after {
+      opacity: 1;
+      background-color: #91111c;
+    }
+    .radio:focus + label:before {
+      border: 2px solid #91111c;
+    }
+    div.block-button {
+      border-top: 1px solid rgb( 224, 224, 224 );
+      margin-top: 30px;
+      padding-top: 15px;
+    }
+    button.submit-form {
+      display: block;
+      width: 200px;
+      height: 45px;
+      border: 4px solid #e0e0e0;
+      margin: 15px auto;
+    }
+    button.submit-form:hover {
+      border-color: #91111c;
+    }
+    button.submit-form a {
+      font: bold 1.8rem 'Trebuchet MS';
+      line-height: 20px;
+      color: #000;
+      text-decoration:none;
+    }
+    div.block-button p {
+      display: block;
+      margin-bottom: 0;
+      font:bold 1.4rem 'PT Serif';
+      line-height:18px;
+    }
+    div.block-button p i {color: #91111c;}
+    //-----------------------------------------------------CHECKBOX-----------------------------------------------------
+    div.block-checkbox {width: 100%;}
+    div.block-checkbox label {
+        display: block;
+        margin-left: calc(20% + 24px);
+      }
+    div.block-checkbox label.label-one {display: inline-block; margin-left: 20px;}
+    /* Cначала обозначаем стили для IE8 и более старых версий
+т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+    .checkbox {
+      vertical-align: top;
+      margin: 0 1px 0 0;
+      width: 16px;
+      height: 16px;
+    }
+    /* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+    селекторы с плюсом. Показываем, что label кликабелен. */
+    .checkbox + label {
+      cursor: pointer;
+    }
+
+    /* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+    Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+    в них все нижеследующие стили не сработают. */
+
+    /* Прячем оригинальный чекбокс. */
+    .checkbox:not(checked) {
+      position: absolute;
+      opacity: 0;
+    }
+    .checkbox:not(checked) + label {
+      position: relative; /* будем позиционировать псевдочекбокс относительно label */
+      padding:0 0 0 35px; /* оставляем слева от label место под псевдочекбокс */
+    }
+    /* Оформление первой части чекбокса в выключенном состоянии (фон). */
+    .checkbox:not(checked) + label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background: transparent;
+      border: 2px solid #000;
+
+      //box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+    }
+    /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+    .checkbox:not(checked) + label:after {
+      content: '';
+      position: absolute;
+      box-shadow: 0 2px 5px rgba(0,0,0,.3);
+      transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+    }
+    /* Меняем фон чекбокса, когда он включен. */
+    .checkbox:checked + label:before {
+      border: 2px solid #91111c;
+      background: url('img/chexbox.png')center no-repeat;
+    }
+  }
+}
+
+//----------------------------------------------MEDIA TABLET FORM-------------------------------------------------------
+@media screen and (min-width: 768px) {
+  article.four form.form-article-four {
+    div.form-list input, div.form-list select {
+      width: calc(90% - (2px * 2));
+    }
+    p.form-h6 {
+      width: 10%;
+    }
+    div.block-button {
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+    }
+    button.submit-form {
+      margin: 0 25px 0 0;
+    }
+    div.block-button p {margin:auto 0;}
+    p.marker {
+      display: inline-block;
+      width: 10%;
+    }
+    div.block-radio label {
+      display: block;
+      margin-left: calc(10% + 4px);
+    }
+    div.block-radio label.label-one {display: inline-block; margin-left: 0;}
+    div.block-checkbox label {
+      display: block;
+      margin-left: calc(10% + 4px);
+    }
+    div.block-checkbox label.label-one {display: inline-block; margin-left: 0;}
+  }
+}

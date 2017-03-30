@@ -1,0 +1,109 @@
+article.first {
+  div.border-article {
+    width: 100%;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+  /*---------------------------------------------------SLIDER-------------------------------------------------------*/
+ul.slick-dots {
+  display: none !important;
+}
+
+button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
+  width: 34px;
+  height: 34px;
+  border: none;
+}
+
+button.slick-next.slick-arrow {
+  position: absolute;
+  right: -17%;
+  top: calc(50% - 17px);
+  z-index: 3;
+  background: url('img/next.png') center no-repeat;
+  background-color: #91111c;
+}
+
+button.slick-prev.slick-arrow {
+  position: absolute;
+  left: -15%;
+  top: calc(50% - 17px);
+  z-index: 3;
+  background: url('img/prev.png') center no-repeat;
+  background-color: #91111c;
+}
+div.item-img-slider-nav.slick-slide.slick-active, div.item-img-slider-nav.slick-slide {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  background-position: center;
+}
+
+div.item-img-slider-nav:nth-child(odd){background: url('img/slider-cheese1.png');}
+div.item-img-slider-nav:nth-child(even) {background: url('img/slider-cheese2.png');
+  width: 70%;}
+
+div.slider-mob {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+div.slider-nav div.item-img-slider-nav, div.slider-for div.item {
+  border: 4px solid #e0e0e0;
+  margin-left: 5px;
+}
+div.slider-nav div.item-img-slider-nav:hover {
+  border-color: #e0cc91;
+}
+
+div.slider-nav.slick-initialized.slick-slider.slick-dotted {
+  width: 75%;
+  margin: 15px auto;
+}
+div.foter-slider {margin-bottom: 15px;}
+
+//--------------------------------------------------------------------MEDIA TABLET SLIDER
+@media screen and (min-width: 768px) {
+  div.foter-slider {margin-bottom: 30px;}
+}
+//--------------------------------------------------------------------MEDIA DESTOPE SLIDER
+@media screen and (min-width: 1024px) {
+
+  div.slider-for div.item {
+    padding: 5rem 3rem 5rem 3rem;
+  }
+  div.slider-mob {
+    padding-left: 160px;
+    padding-right: 55px;
+  }
+  .slider{float: right;}
+  div.footer-slider {margin-bottom: 45px;}
+  div.footer-slider p {font: normal 1.4rem 'PT Serif'; line-height: 20px;}
+  button.slick-next.slick-arrow {
+    right: -16%;
+  }
+
+  button.slick-prev.slick-arrow {
+    left: -15%;
+  }
+}
+////--------------------------------------------------------------------MEDIA LG SLIDER
+@media screen and (min-width: 1140px) {
+
+}
+div.footer-slider {
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 30px 15px;
+  margin-top: 15px;
+  width: 100%;
+}
+//---------------------------------------------------TEXT
+div.text {
+  padding-left: 15px;
+  padding-right: 15px;
+}

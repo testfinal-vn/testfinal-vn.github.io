@@ -1,0 +1,16 @@
+article.three {
+  div.prokrutka {
+    overflow: auto;
+  }
+  table.table tr {font: 300 1.4rem 'PT Serif';}
+  table.table tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  table.table tr:first-child {
+    background-color: #e0cc91;
+    font: bold 1.8rem 'Trebuchet MS';
+  }
+  table.table tr:nth-child(even) {
+    background-color: #eaeaea;
+  }
+}

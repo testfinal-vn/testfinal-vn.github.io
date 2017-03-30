@@ -1,0 +1,38 @@
+//-------------------------------------------TWO ARTICLE-----------------------------------------------
+
+div.two-article-right {
+  float: right;
+}
+div.two-article-right-text {
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 15px;
+
+}
+div.two-article-right {
+  width: 290px;
+}
+div.two-article-right {
+  overflow: hidden;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+ol.two-article-ol, ul.two-article-ul {
+  padding-left: 15px;
+  text-align: justify;
+  color: #91111c;
+  font: bold 1.8rem 'PTSerif';
+}
+ol.two-article-ol li, ul.two-article-ul li {padding-left: 5px;}
+
+//-----------------------------------------------------------------MEDIA TABLE TWO ARTICLE----------------------------
+@media screen and (min-width: 768px) {
+  div.two-article-right {width: 290px;}
+  ol.two-article-ol li, ul.two-article-ul li {padding-left: 25px;}
+}
+
+//-----------------------------------------------------------------MEDIA DESTOPE TWO ARTICLE----------------------------
+@media screen and (min-width: 1024px) {
+  div.two-article-right {width: 360px;}
+}

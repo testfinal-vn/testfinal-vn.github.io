@@ -1,0 +1,72 @@
+//-------------------------------------------Global styles--------------------------------------------------------------
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 30px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font: bold 3rem 'Trebuchet MS';
+}
+h1 {margin-bottom: 15px;}
+p {text-align: justify;}
+p.titleh6 {
+  font: 400 1.8rem 'PT Serif';
+  line-height: 30px;
+  margin-bottom: 10px;
+  color: #000;
+}
+div.border-article {
+  width: 100%;
+  height: 2px;
+  background-color: #e0e0e0;
+  margin-top: 15px;
+}
+//-----------------------------------------MEDIA TABLET Global styles---------------------------------------------------
+
+@media screen and (min-width: 768px) {
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 32px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    font: bold 3.2rem 'Trebuchet MS';
+  }
+  h1 {margin-bottom: 15px;}
+  div.border-article {margin-top: 25px;}
+  p.titleh6 {
+    margin-bottom: 20px;
+  }
+}
+//-----------------------------------------MEDIA DESTOPE Global styles---------------------------------------------------
+
+@media screen and (min-width: 1024px) {
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 40px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+  h1 {font: bold 4rem 'Trebuchet MS'; line-height: 50px; margin-bottom: 20px;}
+  h2 {font: bold 3.6rem 'Trebuchet MS';}
+  h3 {font: bold 3rem 'Trebuchet MS';}
+  h4 {font: bold 2.4rem 'Trebuchet MS';}
+  h5, h6 {font: bold 2rem 'Trebuchet MS';}
+  div.border-article {margin-top: 60px;}
+  p.titleh6 {
+    margin-bottom: 40px;
+  }
+}
+//-----------------------------------------MEDIA LG Global styles---------------------------------------------------
+
+@media screen and (min-width: 1140px) {
+  h1 {font-size: 4.8rem;}
+}

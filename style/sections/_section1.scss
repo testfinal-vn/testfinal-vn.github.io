@@ -1,0 +1,153 @@
+@import "../variables";
+
+/*----------------------------------------------------SECTION------------------------------------------*/
+section.content {
+  margin-top: 3rem;
+}
+/*------------------------------HEADER SECTION*/
+div .delimiter {
+  position: relative;
+  margin: 0 auto;
+  background-color: transparent;
+  width: 90%;
+}
+div .flag {
+  position: absolute;
+  height: 10px;
+  top:20px;
+  left: -2.5rem;
+}
+.flag span {
+  width: 27px;
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+}
+div .green {
+  background-color: #4caf50;
+}
+div .white {
+  background-color: #fff;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+div .red {
+  background-color: #f44336;
+}
+div .subsections {
+  position: absolute;
+  height: 10px;
+  right: 0;
+  top:0;
+  line-height: 14px;
+  font-size: 1.6rem;
+  overflow: hidden;
+}
+div .subsections:after {
+  content: '';
+  position: absolute;
+  width: 11rem;
+  height: 10px;
+  background-color: #ccc;
+  display: inline-block;
+}
+ul.subsection {
+  padding: 0;
+}
+ul.subsection a:first-child {
+  padding-left: 0;
+}
+div .active {
+  position: relative;
+  color: #91111c;
+  text-decoration: underline;
+}
+div .active:after {
+  content: '-';
+  position: absolute;
+  top:.9rem;
+  right: -0.25rem;
+  display: block;
+}
+h1 {
+  margin-top: 35px;
+}
+.subsection-item {
+  height: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  padding: 1rem .5rem;
+  z-index: 1;
+  color: #d3d3d3;
+}
+p.times {
+  color: #ccc;
+  font: 300 1.2rem 'PT Serif';
+}
+
+//------------------------------------------------header-delimiter-two
+div.header-delimiter-two {
+  margin-top: 4rem;
+}
+//----------------- header productions
+span.product {
+  font: bold 1.8rem 'Trebuchet';
+  line-height: 30px;
+}
+//---------------- header contacts
+div.contacts {
+  text-align: right;
+  margin-top: 10px;
+}
+div.block-contact a{
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+.block-contact {display: inline-block;}
+.contacts .block-contact:nth-child(1) a {
+  background: url('img/spite-icons.png') 0 0;
+}
+.contacts .block-contact:nth-child(2) a {
+  background: url('img/spite-icons.png') 30px 0;
+}
+.contacts .block-contact:nth-child(3) a {
+  background: url('img/spite-icons.png') 63px 0;
+}
+.contacts .block-contact:nth-child(4) a {
+  background: url('img/spite-icons.png') 96px 0;
+}
+.contacts .block-contact:nth-child(5) a {
+  background: url('img/spite-icons.png') 129px 0;
+}
+//--------------------------------------------------------------------MEDIA DESTOPE SECTION HEADER
+@media screen and (min-width: 1024px) {
+  section.content {
+    margin-top: 70px;
+    overflow: hidden;
+    div.delimiter {
+      width: 100%;
+    }
+    div .text-h1 h1 {
+      margin-top: 0;
+    }
+    .text-h1 {padding-left: 100px;}
+    ul.subsection {
+      text-align: center;
+      font-size: 1rem;
+    }
+    ul.subsection:after {
+      margin-left: 30px;
+      width: 110px;
+      height: 11px;
+      background-color: #ccc;
+      content: '';
+      top: 2px;
+      position: absolute;
+      padding-left: .5rem;
+    }
+    div .active:after {
+      top: .7rem;
+    }
+  }
+}

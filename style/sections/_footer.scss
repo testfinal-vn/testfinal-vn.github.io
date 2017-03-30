@@ -1,0 +1,91 @@
+footer {
+  margin-top: 30px;
+  background-color: #e0e0e0;
+  padding-bottom: 30px;
+  ul.nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  ul.nav li {display: inline-block;}
+  ul.nav li a {
+    padding: 10px 5px 0 5px;
+    color: #000;
+    font: bold 1.4rem 'Trebuchet MS';
+    line-height: 40px;
+    border-bottom: 4px solid #bd4f61;
+  }
+  ul.nav li:hover a {
+    background-color: transparent;
+    color: #91111c;
+  }
+  ul.nav li:first-child a {padding-left: 0;}
+  ul.nav li:last-child a {padding-right: 0;}
+  p.header-footer, p.rights {display: inline-block;}
+  div.contacts-footer ul {list-style-type: none; padding-left: 0;}
+  div.contacts-footer ul ul {padding-left: 0;}
+  p.header-footer {font:bold 2rem 'Trebuchet MS';}
+  p.rights {font:normal 1.4rem 'PT Serif';}
+  .contacts-footer {margin-top: 30px;}
+  .contacts-footer ul {margin-bottom: 15px;}
+  .contacts-footer ul li {font:normal 1.6rem 'PT Serif'; line-height:24px;}
+  .contacts-footer ul li a {color: #000; cursor: pointer;}
+  .contacts-footer ul li a {text-decoration: none;}
+  .contacts-footer ul li a:hover  {border-bottom: 1px solid #91111c;}
+  ul.fonts-sprite {text-align: center; margin-top: 20px;}
+  ul.fonts-sprite span {margin-top: 25px;}
+  ul.fonts-sprite a {
+    width: 21px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 25px;
+  }
+  ul.fonts-sprite a:last-child {margin-right: 0;}
+  ul.fonts-sprite span a:nth-child(1) {background: url('img/fonts-sprite.png') 0 0;}
+  ul.fonts-sprite span a:nth-child(2) {background: url('img/fonts-sprite.png') 21px 0;}
+  ul.fonts-sprite span a:nth-child(3) {background: url('img/fonts-sprite.png') 63px 0;}
+  ul.fonts-sprite span a:nth-child(4) {background: url('img/fonts-sprite.png') 113px 0; width: 24px;}
+}
+//--------------------------------------------------------------------MEDIA TABLET FOOTER
+@media screen and (min-width: 768px) {
+  footer {
+    ul.nav {justify-content: flex-start;}
+    .contacts-footer > ul {
+      right: 0;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 0;
+    }
+    .contacts-footer {margin-top: 50px;}
+    p.header-footer {display: block;}
+    p.rights {margin-left: 0;}
+  }
+  ul.fonts-sprite {margin-top:25px;}
+  ul.fonts-sprite li {float: left;}
+}
+//--------------------------------------------------------------------MEDIA DESTOPE FOOTER
+@media screen and (min-width: 988px) {
+  footer {
+    height: 200px;
+    position: relative;
+    .contacts-footer {
+      right: 67px;
+      margin-top: 0;
+    }
+    .contacts-footer > ul {
+      bottom: auto;
+      margin-top: 40px;
+    }
+    div.rights-block {
+      position: absolute;
+      bottom: -169px;
+      left: -176%;
+    }
+    ul.nav li:first-child a {margin-left: 0;}
+    ul.nav li a {margin-left: 30px;}
+    ul.fonts-sprite {float: left;}
+  }
+}
+

@@ -1,0 +1,72 @@
+article.five {
+  .block-from {
+    height: 210px;
+
+  }
+  div.ok.block-from, div.error.block-from {
+    margin: 15px;
+    width: calc(100% - 30px);
+    height: 500px;
+    text-align: center;
+    display: none;
+  }
+  .ok {background-color: #e0cc91;}
+  .error {background-color: #91111c;}
+  .error, .ok {
+    padding-top: 100px;
+  }
+  div.img-ok {background: url('img/ok.png') no-repeat;}
+  div.img-error {background: url('img/error.png') no-repeat;}
+  div.img-ok, div.img-error {
+    height: 66px;
+    width: 99px;
+    left: 28%;
+    top:100px;
+    margin: 0 auto;
+  }
+  div.img-error {
+    width: 64px;
+    height: 63px;
+  }
+  p.five-red, p.five-white {
+    color: #91111c;
+    font: bold 2.4rem 'Trebuchet MS';
+    line-height: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  p.five-white {color: #fff;}
+  p.five-h6, p.five-white-little {
+    color: #000;
+    font: bold 1.8rem 'Trebuchet MS';
+    line-height: 40px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
+//------------------------------------------MEDIA TABLET ARTICLE FIVE---------------------------------------------------
+@media screen and (min-width: 768px) {
+  article.five {
+    div.ok.block-from, div.error.block-from {
+      margin: 15px;
+      width: calc(50% - 30px);
+    }
+  }
+}
+//------------------------------------------MEDIA LG ARTICLE FIVE---------------------------------------------------
+@media screen and (min-width: 1140px) {
+  article.five {
+    div.ok.block-from:first-child {margin-right: 30px;}
+    div.ok.block-from, div.error.block-from {
+      width: 555px;
+      height: 501px;
+      margin: 0;
+    }
+    .error, .ok {padding-top: 123px;}
+    p.five-red, p.five-white {margin-top: 68px;}
+    p.five-h6, p.five-white-little {margin-top: 50px;}
+
+  }
+}
