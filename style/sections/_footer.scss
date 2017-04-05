@@ -33,7 +33,6 @@ footer {
   .contacts-footer ul li {font:normal 1.6rem 'PT Serif'; line-height:24px;}
   .contacts-footer ul li a {color: #000; cursor: pointer;}
   .contacts-footer ul li a {text-decoration: none;}
-  .contacts-footer ul li a:hover  {border-bottom: 1px solid #91111c;}
   ul.fonts-sprite {text-align: center; margin-top: 20px;}
   ul.fonts-sprite span {margin-top: 25px;}
   ul.fonts-sprite a {
@@ -87,8 +86,9 @@ footer {
       left: -176%;
     }
     ul.nav li:first-child a {margin-left: 0;}
-    ul.nav li a {margin-left: 30px;}
+    ul.nav li a {margin-left: 30px; padding-bottom: 3px;}
     ul.fonts-sprite {float: left;}
   }
+  nav.footer-nav {padding-top: 30px;}
 }
 

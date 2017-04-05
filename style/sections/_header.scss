@@ -1,5 +1,11 @@
 header.header-top {
-  margin-top: 2rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 5%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0,0,0,0));
+  padding-top: 2rem;
   .navbar-default {
     background: transparent;
     box-shadow: none;
